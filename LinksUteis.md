@@ -101,7 +101,7 @@ yt-dlp --write-subs --skip-download "Link do vídeo"
 ```
 yt-dlp --write-auto-subs --skip-download "Link do vídeo"
 ```
-
+---
 9) **Baixar apenas um trecho do vídeo**
 
 ```js
@@ -110,27 +110,35 @@ yt-dlp --download-sections "*00:00:00-00:00:30" "Link do vídeo"
 //Assim baixa apenas os 30 segundos iniciais
 ```
 
-
+---
 10) **Dar nome personalizado ao arquivo**
 
 ```
 yt-dlp -o "MeuVideo.%(ext)s" "Link do vídeo"
 ```
-
+---
 11) **Instalar FFmpeg**
 ```
 winget install Gyan.FFmpeg
 ```
+---
 12) **Atualizar yt-dlp**
 ```
 yt-dlp -U
 ```
-
+---
 13) **Testar FFmpeg**
 ```
 ffmpeg -version
 ```
-
+---
 14) **Onde os arquivos são salvos?**
 
 Na pasta atual que você está do terminal
+
+---
+15) **Converter vídeo para formato compatível (Holyrics, projetor, TV, etc)**
+
+```
+ffmpeg -i "VideoOriginal.mp4" -c:v libx264 -pix_fmt yuv420p -preset medium -crf 23 -c:a aac -b:a 192k "VideoConvertido_OK.mp4"
+```

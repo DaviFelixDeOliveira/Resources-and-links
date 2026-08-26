@@ -13,3 +13,7 @@
 
 [Criar vídeos - Kling 3](https://kling3.io/pt/)
 
+---
+
+[Usar diversas ferramentos de fazer vídeos, fotos e áudios pagando 1 vez - Higgsfieeld](https://higgsfield.ai/)
+
